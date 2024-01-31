@@ -1,0 +1,42 @@
+.date-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "y-label m-label d-label ."
+    "y-input m-input d-input t-button"
+    "y-input m-input d-input t-button";
+  column-gap: 5px;
+
+  .item-y-label {
+    grid-area: y-label;
+  }
+
+  .item-m-label {
+    grid-area: m-label;
+  }
+
+  .item-d-label {
+    grid-area: d-label;
+  }
+
+  .item-y-input {
+    grid-area: y-input;
+  }
+
+  .item-m-input {
+    grid-area: m-input;
+  }
+
+  .item-d-input {
+    grid-area: d-input;
+  }
+
+  .item-t-button {
+    grid-area: t-button;
+  }
+
+  .d-sel-input {
+    width: 8ch;
+  }
+}
